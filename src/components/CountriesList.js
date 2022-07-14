@@ -2,13 +2,14 @@ import {Link} from "react-router-dom";
 import countriesData from "../countries.json"
 import {useState} from "react";
 
-function CountriesList (){
-const [countries, setCountries] = useState(countriesData)
+function CountriesList (props){
+  const {countriesData} = props
+//const [countries, setCountries] = useState(countriesData)
    
  return (
      
  <>
-  {countries.map((eachCountry) => {
+  {countriesData.map((eachCountry) => {
    return (
      <ul>
    
