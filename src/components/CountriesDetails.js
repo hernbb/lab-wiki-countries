@@ -21,9 +21,9 @@ import { useParams } from "react-router-dom";
     <div>
     {foundCountry && <>
          <h1>Country Details</h1>
-         <h4>Name: {foundCountry.name.common}</h4>
-         <h5>Official Name: {foundCountry.name.official}</h5>
-         <h5>Currency: {foundCountry.currencies.AWG.name}</h5>
+         <h4>Name:{foundCountry.name.common}</h4>
+         <h5>Official Name:{foundCountry.name.official}</h5>
+
     </>
     }
     
